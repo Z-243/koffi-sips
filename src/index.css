@@ -1,0 +1,345 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-secondary);
+}
+
+header button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+main h1 {
+  padding-top: 1.5rem;
+}
+
+h2 {
+  padding-top: 1.5rem;
+}
+
+.title-content {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 1.9rem;
+}
+
+/* .title-content i {
+  font-size: 1.5rem; 
+} */
+
+.gradient {
+  background: linear-gradient(to right, #f7ff00, #db36a4);
+}
+
+/* Added new styles */
+
+/* Larger, animated coffee emoji */
+.coffee-emoji {
+  font-size: 2.2rem;
+  vertical-align: middle;
+}
+
+/* Modern benefits list */
+abbr {
+  display: inline;
+  color: var(--gradient-end);
+  font-weight: 700;
+  text-decoration: underline dotted var(--border-secondary);
+  cursor: help;
+}
+
+.benefits-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+  background: var(--background-primary);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: background 0.2s;
+}
+
+.benefits-list li:hover {
+  background: var(--background-primary);
+}
+
+/* Benefit icon with color and animation */
+.benefit-icon {
+  font-size: 1.5rem;
+  margin-right: 0.7rem;
+  transition: transform 0.2s;
+}
+
+.benefits-list li:hover .benefit-icon {
+  transform: scale(1.2) rotate(-8deg);
+}
+
+/* .benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.benefits-list h3 {
+  padding-bottom: 0.5rem;
+} */
+
+.info-card {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-card > div:first-of-type {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-card i {
+  font-size: 1.2rem;
+}
+
+.hero-info {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.heat-bar {
+  height: 4rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.font-bolder {
+  font-weight: 400;
+}
+
+.font-bolder p:first-of-type {
+  margin-top: 0.5rem;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.modal-underlay {
+  position: absolute;
+  inset: 0;
+  background: var(--background-muted);
+  opacity: 0.8;
+  z-index: 99;
+  border: none;
+  width: 100%;
+  box-shadow: unset;
+}
+
+.modal-underlay:hover {
+  transform: translate(0);
+  box-shadow: unset;
+}
+
+.modal-content {
+  position: relative;
+  z-index: 101;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 400px;
+  border-radius: var(--border-radius-large);
+  border: 1px solid var(--border-primary);
+  background: var(--background-primary);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  gap: 1rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-header i {
+  padding-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.coffee-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.coffee-grid button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.coffee-button-selected {
+  border-color: var(--border-highlight) !important;
+  opacity: 0.8 !important;
+  transform: scale(1.02) !important;
+  box-shadow: none !important;
+}
+
+.stats-grid,
+.time-entry {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.w-full {
+  width: 100%;
+  max-width: unset;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stat-table {
+  width: 100%;
+  grid-column: span 2 / span 2;
+}
+
+.stat-text {
+  font-size: 2.25rem;
+  line-height: 1;
+  padding-right: 0.25rem;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.status h5 {
+  padding: 0.15rem 0.75rem;
+  border-radius: var(--border-radius-small);
+}
+
+.coffee-history {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.coffee-history i {
+  font-size: 1.5rem;
+}
+
+.coffee-card {
+  position: relative;
+}
+
+.coffee-card-stat {
+  position: absolute;
+  z-index: 4;
+  display: none;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+}
+
+.coffee-card-stat p {
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+footer {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sign-up-text {
+  padding-top: 0;
+}
+
+.register-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  main h1 {
+    padding-top: 2.5rem;
+  }
+
+  .hero-info {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .coffee-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .caffeine-level-text {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
