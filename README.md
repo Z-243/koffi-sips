@@ -53,4 +53,10 @@ Feel free to fork, raise issues, or contribute with suggestions and improvements
 
 ---
 
+## 🚀 Live Demo
+
+👉 [Koffi Sips](https://koffi-sips.netlify.app/)
+
+---
+
 > Stay alert, stay mindful – one cup at a time ☕
