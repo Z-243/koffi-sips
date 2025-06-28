@@ -43,7 +43,11 @@ This app is designed for **coffee lovers, health-conscious drinkers**, and even 
 
 ## 📸 Screenshots
 
-Coming soon...
+<img src="https://raw.githubusercontent.com/Z-243/koffi-sips/main/assets/koffi-sips.png" width="500" />
+
+<img src="https://raw.githubusercontent.com/Z-243/koffi-sips/main/assets/coffee-tracking-light.png" width="500" />
+
+<img src="https://raw.githubusercontent.com/Z-243/koffi-sips/main/assets/coffee-tracking-dark.png" width="500" />
 
 ---
 
