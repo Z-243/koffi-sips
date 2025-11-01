@@ -1,4 +1,4 @@
-// lets the user why they should use this app
+// tells the user why they should use this app
 export default function Hero() {
   return (
     <>
